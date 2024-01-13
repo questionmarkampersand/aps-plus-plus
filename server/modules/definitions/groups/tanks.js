@@ -2196,11 +2196,38 @@ Class.spikyTurret = {
          }, 
      ],
 }
-Class.autoSmasher = makeAuto({
-    PARENT: "genericSmasher",
-    DANGER: 6,
+Class.menu = {
+    PARENT: ["genericTank"],
+    LABEL: "",
+    SKILL_CAP: [
+        dfltskl,
+        dfltskl,
+        dfltskl,
+        dfltskl,
+        dfltskl,
+        dfltskl,
+        dfltskl,
+        dfltskl,
+        dfltskl,
+        dfltskl,
+    ],
+    IGNORED_BY_AI: true,
+    TURRETS: [],
+    GUNS: [
+        {
+            /*** LENGTH    WIDTH     ASPECT        X             Y         ANGLE     DELAY */
+            POSITION: [18, 10, -1.4, 0, 0, 0, 0],
+            PROPERTIES: {
+                SHOOT_SETTINGS: combineStats([g.basic]),
+                TYPE: "bullet",
+            },
+        },
+    ],
+};
+Class.spikyfier = makeAuto({
+    PARENT: ["menu"],
     "Spikyfier", {
-    type: "autoSmasherTurret",
+    type: "spikyTurret",
     size: 11,
 })
 Class.booster = {
