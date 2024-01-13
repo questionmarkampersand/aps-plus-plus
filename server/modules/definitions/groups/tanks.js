@@ -2147,6 +2147,55 @@ Class.fighter = {
         },
     ],
 }
+Class.spikyTurret = {
+   PARENT: "genericTank",
+   LABEL: 'Spiky Turret',
+   SHAPE: 0,
+   DAMAGE_CLASS: 2,
+   DANGER: 0,
+   MOTION_TYPE: 'glide',
+   FACING_TYPE: 'turnWithSpeed',
+   SIZE: 12,
+   MAX_CHILDREN: 0,
+   DAMAGE_EFFECTS: false,
+   BODY: {
+      DAMAGE: base.DAMAGE * 25,
+   },
+   GUNS: [ {
+         POSITION: [ -18, 8, 0, 23, -4, 0, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 23, -4, 90, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 23, -4, 180, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 23, -4, -90, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 20, -4, 45, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 20, -4, 135, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 20, -4, -138.5, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 20, -4, -47.5, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 16, -4, 18.5, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 16, -4, 64.5, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 16, -4, 113.5, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 16, -4, 154.5, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 16, -4, -159, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 16, -4, -119, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 16, -4, -67.5, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 16, -4, -27, 0, ],
+         }, 
+     ],
+}
 Class.booster = {
     PARENT: "genericTank",
     LABEL: "Booster",
