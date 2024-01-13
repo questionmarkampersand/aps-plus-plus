@@ -2227,9 +2227,12 @@ Class.menu = {
 Class.spikyfier = makeAuto({
     PARENT: ["menu"],
     "Spikyfier", {
+     TURRETS: [],
+    SKILL_CAP: [dfltskl,dfltskl,dfltskl,dfltskl,dfltskl,dfltskl,dfltskl,dfltskl,dfltskl,dfltskl,],
     type: "spikyTurret",
-    size: 11,
+    size: 11, 
 })
+
 Class.booster = {
     PARENT: "genericTank",
     LABEL: "Booster",
