@@ -2196,6 +2196,13 @@ Class.spikyTurret = {
          }, 
      ],
 }
+Class.autoSmasher = makeAuto({
+    PARENT: "genericSmasher",
+    DANGER: 6,
+    "Spikyfier", {
+    type: "autoSmasherTurret",
+    size: 11,
+})
 Class.booster = {
     PARENT: "genericTank",
     LABEL: "Booster",
