@@ -534,7 +534,7 @@ Class.mn2 = {
     ],
 };
 Class.spikyTurret = {
-   PARENT: ["genericTank"],
+   PARENT: ["bullet"],
    LABEL: 'Spiky Turret',
    SHAPE: 0,
    DAMAGE_CLASS: 2,
