@@ -505,6 +505,21 @@ Class.miscTestHelper = {
         }
     ]
 };
+Class.sfbulletb = {
+   PARENT: ["bullet"],	
+   LABEL: '',
+   SHAPE: 0,
+   DAMAGE_CLASS: 2,
+   COLOR: "white",
+   DANGER: 0,
+   SIZE: 12,
+   MAX_CHILDREN: 0,
+   DAMAGE_EFFECTS: false,
+   BODY: {
+      DAMAGE: base.DAMAGE * 0,
+         }, 
+     ],
+};
 Class.sfbase = {
     PARENT: ["genericTank"],
     LABEL: "",
@@ -529,7 +544,7 @@ Class.sfbase = {
             POSITION: [18, 10, -1.4, 0, 0, 0, 0],
             PROPERTIES: {
                 SHOOT_SETTINGS: combineStats([g.basic]),
-                TYPE: "bullet",
+                TYPE: "sfbullet",
             },
         },
     ],
@@ -582,7 +597,10 @@ Class.spikyTurret = {
          }, 
      ],
 };
-
+Class.sfbullet = makeAuto(Class.sfbase, "", {
+    type: "spikyTurret",
+    size: 9,
+})
 Class.spikyfier = makeAuto(Class.sfbase, "Spikyfier", {
     type: "spikyTurret",
     MIRROR_MASTER_ANGLE: true,
