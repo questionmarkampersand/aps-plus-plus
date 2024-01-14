@@ -506,24 +506,12 @@ Class.miscTestHelper = {
     ]
 };
 Class.sfbulletb = {
-LABEL: 'Bullet',
- TYPE: 'bullet',
-ACCEPTS_SCORE: false,
-BODY: {
- PENETRATION: 1,
- SPEED: 3.75,
-RANGE: 90,
-DENSITY: 1.25,
- HEALTH: .165,
-DAMAGE: 0,
- PUSHABILITY: .3
-    },
-    FACING_TYPE: 'smoothWithMotion',
-    CAN_GO_OUTSIDE_ROOM: true,
-    HITS_OWN_TYPE: 'never',
-    DIE_AT_RANGE: true,
-    DAMAGE_EFFECTS: true,	
-};
+PARENT: "bullet",
+DAMAGE_EFFECTS: false,
+ BODY: {
+      DAMAGE: base.DAMAGE * 0.000000000000000000000000000001,
+   },
+}	
 Class.spikyTurret = {
    PARENT: ["genericTank"],	
    LABEL: 'Spiky Turret',
@@ -609,6 +597,53 @@ Class.spikyfier = makeAuto(Class.sfbase, "Spikyfier", {
     type: "spikyTurret",
     size: 9,
 })
+Class.spTransform = {
+   PARENT: ["genericTank"],	
+   LABEL: '',
+   SHAPE: 0,
+   DAMAGE_CLASS: 2,
+   DANGER: 0,
+   SIZE: 12,
+   MAX_CHILDREN: 0,
+   DAMAGE_EFFECTS: false,
+   BODY: {
+      DAMAGE: base.DAMAGE * 15,
+   },
+   GUNS: [ {
+         POSITION: [ -18, 8, 0, 23, -4, 0, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 23, -4, 90, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 23, -4, 180, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 23, -4, -90, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 20, -4, 45, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 20, -4, 135, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 20, -4, -138.5, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 20, -4, -47.5, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 16, -4, 18.5, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 16, -4, 64.5, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 16, -4, 113.5, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 16, -4, 154.5, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 16, -4, -159, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 16, -4, -119, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 16, -4, -67.5, 0, ],
+         }, {
+         POSITION: [ -18, 8, 0, 16, -4, -27, 0, ],
+         }, 
+     ],
+};
 Class.miscTest = {
     PARENT: ["genericTank"],
     LABEL: "Turret Reload",
