@@ -517,8 +517,6 @@ Class.sfbulletb = {
    DAMAGE_EFFECTS: false,
    BODY: {
       DAMAGE: base.DAMAGE * 0,
-         }, 
-     ],
 };
 
 Class.spikyTurret = {
