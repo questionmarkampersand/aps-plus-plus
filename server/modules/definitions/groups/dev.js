@@ -520,35 +520,7 @@ Class.sfbulletb = {
          }, 
      ],
 };
-Class.sfbase = {
-    PARENT: ["genericTank"],
-    LABEL: "",
-    SKILL_CAP: [
-        dfltskl,
-        dfltskl,
-        dfltskl,
-        dfltskl,
-        dfltskl,
-        dfltskl,
-        dfltskl,
-        dfltskl,
-        dfltskl,
-        dfltskl,
-    ],
-    IGNORED_BY_AI: true,
-    TURRETS: [],
-    UPGRADE_TOOLTIP: "Make your enemies spiky",
-    GUNS: [
-        {
-            /*** LENGTH    WIDTH     ASPECT        X             Y         ANGLE     DELAY */
-            POSITION: [18, 10, -1.4, 0, 0, 0, 0],
-            PROPERTIES: {
-                SHOOT_SETTINGS: combineStats([g.basic]),
-                TYPE: "sfbullet",
-            },
-        },
-    ],
-};
+
 Class.spikyTurret = {
    PARENT: ["genericTank"],	
    LABEL: 'Spiky Turret',
@@ -601,6 +573,35 @@ Class.sfbullet = makeAuto(Class.sfbase, "", {
     type: "spikyTurret",
     size: 9,
 })
+Class.sfbase = {
+    PARENT: ["genericTank"],
+    LABEL: "",
+    SKILL_CAP: [
+        dfltskl,
+        dfltskl,
+        dfltskl,
+        dfltskl,
+        dfltskl,
+        dfltskl,
+        dfltskl,
+        dfltskl,
+        dfltskl,
+        dfltskl,
+    ],
+    IGNORED_BY_AI: true,
+    TURRETS: [],
+    UPGRADE_TOOLTIP: "Make your enemies spiky",
+    GUNS: [
+        {
+            /*** LENGTH    WIDTH     ASPECT        X             Y         ANGLE     DELAY */
+            POSITION: [18, 10, -1.4, 0, 0, 0, 0],
+            PROPERTIES: {
+                SHOOT_SETTINGS: combineStats([g.basic]),
+                TYPE: "sfbullet",
+            },
+        },
+    ],
+};
 Class.spikyfier = makeAuto(Class.sfbase, "Spikyfier", {
     type: "spikyTurret",
     MIRROR_MASTER_ANGLE: true,
