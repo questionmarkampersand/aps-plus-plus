@@ -515,9 +515,6 @@ Class.spikyTurret = {
    SIZE: 12,
    MAX_CHILDREN: 0,
    DAMAGE_EFFECTS: false,
-   BODY: {
-      DAMAGE: base.DAMAGE * 25,
-   },
    GUNS: [ {
          POSITION: [ -18, 8, 0, 23, -4, 0, 0, ],
          }, {
@@ -577,7 +574,7 @@ Class.sfbase = {
             POSITION: [18, 10, -1.4, 0, 0, 0, 0],
             PROPERTIES: {
                 SHOOT_SETTINGS: combineStats([g.basic]),
-                TYPE: "sfbullet",
+                TYPE: "bullet",
             },
         },
     ],
