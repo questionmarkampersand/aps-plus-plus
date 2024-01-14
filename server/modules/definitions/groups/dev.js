@@ -522,6 +522,7 @@ Class.sfbase = {
     ],
     IGNORED_BY_AI: true,
     TURRETS: [],
+    UPGRADE_TOOLTIP: "Make your enemies spiky",
     GUNS: [
         {
             /*** LENGTH    WIDTH     ASPECT        X             Y         ANGLE     DELAY */
@@ -584,7 +585,6 @@ Class.spikyTurret = {
 
 Class.spikyfier = makeAuto(Class.sfbase, "Spikyfier", {
     type: "spikyTurret",
-    UPGRADE_TOOLTIP: "Makes your enemies spiky",
     MIRROR_MASTER_ANGLE: true,
     size: 11,
 })
