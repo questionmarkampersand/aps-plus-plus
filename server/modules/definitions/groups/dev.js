@@ -505,13 +505,6 @@ Class.miscTestHelper = {
         }
     ]
 };
-Class.sfbulletb = {
-PARENT: "bullet",
-DAMAGE_EFFECTS: false,
- BODY: {
-      DAMAGE: base.DAMAGE * 0.000000000000000000000000000001,
-   },
-}	
 Class.spikyTurret = {
    PARENT: ["genericTank"],	
    LABEL: 'Spiky Turret',
@@ -560,10 +553,6 @@ Class.spikyTurret = {
          }, 
      ],
 };
-Class.sfbullet = makeAuto(Class.sfbase, "", {
-    type: "spikyTurret",
-    size: 9,
-})
 Class.sfbase = {
     PARENT: ["genericTank"],
     LABEL: "",
