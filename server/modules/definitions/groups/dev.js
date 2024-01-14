@@ -604,7 +604,6 @@ Class.sfbase = {
 };
 Class.spikyfier = makeAuto(Class.sfbase, "Spikyfier", {
     type: "spikyTurret",
-    MIRROR_MASTER_ANGLE: true,
     size: 9,
 })
 Class.miscTest = {
