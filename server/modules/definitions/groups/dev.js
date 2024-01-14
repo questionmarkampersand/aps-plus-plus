@@ -583,6 +583,7 @@ Class.spikyfier = makeAuto(Class.sfbase, "Spikyfier", {
     type: "spikyTurret",
     size: 9,
 })
+//spikyfier adds this thing to enemies
 Class.spTransform = {
    PARENT: ["genericTank"],	
    LABEL: '',
