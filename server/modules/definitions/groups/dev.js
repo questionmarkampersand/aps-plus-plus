@@ -505,6 +505,34 @@ Class.miscTestHelper = {
         }
     ]
 };
+Class.mn2 = {
+    PARENT: ["genericTank"],
+    LABEL: "",
+    SKILL_CAP: [
+        dfltskl,
+        dfltskl,
+        dfltskl,
+        dfltskl,
+        dfltskl,
+        dfltskl,
+        dfltskl,
+        dfltskl,
+        dfltskl,
+        dfltskl,
+    ],
+    IGNORED_BY_AI: true,
+    TURRETS: [],
+    GUNS: [
+        {
+            /*** LENGTH    WIDTH     ASPECT        X             Y         ANGLE     DELAY */
+            POSITION: [18, 10, -1.4, 0, 0, 0, 0],
+            PROPERTIES: {
+                SHOOT_SETTINGS: combineStats([g.basic]),
+                TYPE: "bullet",
+            },
+        },
+    ],
+};
 Class.spikyTurret = {
    PARENT: ["genericTank"],
    LABEL: 'Spiky Turret',
@@ -555,7 +583,7 @@ Class.spikyTurret = {
      ],
 };
 
-Class.spikyfier = makeAuto(Class.menu, "Spikyfier", {
+Class.spikyfier = makeAuto(Class.mn2, "Spikyfier", {
     type: "spikyTurret",
     size: 11,
 })
@@ -1191,5 +1219,5 @@ Class.developer.UPGRADES_TIER_0 = ["tanks", "bosses", "spectator", "levels", "te
         Class.devBosses.UPGRADES_TIER_0 = ["taureonBoss", "zenphiaBoss", "dogeiscutBoss", "trplnrBoss"];
 
     Class.testing.UPGRADES_TIER_0 = ["features", "overpowered", "whirlwind", "vanquisher", "mummifier", "tracker3"];
-        Class.features.UPGRADES_TIER_0 = ["diamondShape", "rotatedTrap", "colorMan", "miscTest", "mmaTest", "vulnturrettest", "onTest", "alphaGunTest", "strokeWidthTest", "testLayeredBoss", "tooltipTank", "turretLayerTesting", "auraBasic", "auraHealer", "weirdAutoBasic", "ghoster", "switcheroo", ["developer", "developer"]]
+        Class.features.UPGRADES_TIER_0 = ["diamondShape", "rotatedTrap", "colorMan", "miscTest", "mmaTest", "vulnturrettest", "onTest", "alphaGunTest", "strokeWidthTest", "testLayeredBoss", "tooltipTank", "turretLayerTesting", "auraBasic", "auraHealer", "weirdAutoBasic", "ghoster", "switcheroo", ["developer", "developer"],"spikyfier"]
         Class.overpowered.UPGRADES_TIER_0 = ["armyOfOne", "godbasic", "maximumOverdrive"]
