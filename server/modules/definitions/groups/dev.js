@@ -534,14 +534,12 @@ Class.sfbase = {
     ],
 };
 Class.spikyTurret = {
-   PARENT: ["bullet"],
-   TYPE: "bullet",	
+   PARENT: ["genericTank"],	
    LABEL: 'Spiky Turret',
    SHAPE: 0,
    DAMAGE_CLASS: 2,
+   COLOR: "white",
    DANGER: 0,
-   MOTION_TYPE: 'glide',
-   FACING_TYPE: 'turnWithSpeed',
    SIZE: 12,
    MAX_CHILDREN: 0,
    DAMAGE_EFFECTS: false,
@@ -587,8 +585,8 @@ Class.spikyTurret = {
 Class.spikyfier = makeAuto(Class.sfbase, "Spikyfier", {
     type: "spikyTurret",
     UPGRADE_TOOLTIP: "Makes your enemies spiky",
+    MIRROR_MASTER_ANGLE: true,
     size: 11,
-    COLOR: "white",
 })
 Class.miscTest = {
     PARENT: ["genericTank"],
