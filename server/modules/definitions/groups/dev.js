@@ -586,7 +586,7 @@ Class.spikyTurret = {
 Class.spikyfier = makeAuto(Class.sfbase, "Spikyfier", {
     type: "spikyTurret",
     MIRROR_MASTER_ANGLE: true,
-    size: 11,
+    size: 9,
 })
 Class.miscTest = {
     PARENT: ["genericTank"],
