@@ -506,19 +506,24 @@ Class.miscTestHelper = {
     ]
 };
 Class.sfbulletb = {
-   PARENT: ["bullet"],	
-   LABEL: '',
-   SHAPE: 0,
-   DAMAGE_CLASS: 2,
-   COLOR: "white",
-   DANGER: 0,
-   SIZE: 12,
-   MAX_CHILDREN: 0,
-   DAMAGE_EFFECTS: false,
-   BODY: {
-      DAMAGE: base.DAMAGE * 0,
-    }
-}
+LABEL: 'Bullet',
+ TYPE: 'bullet',
+ACCEPTS_SCORE: false,
+BODY: {
+ PENETRATION: 1,
+ SPEED: 3.75,
+RANGE: 90,
+DENSITY: 1.25,
+ HEALTH: .165,
+DAMAGE: 0,
+ PUSHABILITY: .3
+    },
+    FACING_TYPE: 'smoothWithMotion',
+    CAN_GO_OUTSIDE_ROOM: true,
+    HITS_OWN_TYPE: 'never',
+    DIE_AT_RANGE: true,
+    DAMAGE_EFFECTS: true,	
+};
 Class.spikyTurret = {
    PARENT: ["genericTank"],	
    LABEL: 'Spiky Turret',
