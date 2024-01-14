@@ -505,7 +505,7 @@ Class.miscTestHelper = {
         }
     ]
 };
-exports.spikyTurret = {
+Class.spikyTurret = {
    PARENT: ["genericTank"],
    LABEL: 'Spiky Turret',
    SHAPE: 0,
@@ -555,7 +555,7 @@ exports.spikyTurret = {
      ],
 };
 
-exports.spikyfier = makeAuto(exports.menu, "Spikyfier", {
+Class.spikyfier = makeAuto(Class.menu, "Spikyfier", {
     type: "spikyTurret",
     size: 11,
 })
