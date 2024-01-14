@@ -505,7 +505,7 @@ Class.miscTestHelper = {
         }
     ]
 };
-Class.mn2 = {
+Class.sfbase = {
     PARENT: ["genericTank"],
     LABEL: "",
     SKILL_CAP: [
@@ -535,6 +535,7 @@ Class.mn2 = {
 };
 Class.spikyTurret = {
    PARENT: ["bullet"],
+   TYPE: "bullet",	
    LABEL: 'Spiky Turret',
    SHAPE: 0,
    DAMAGE_CLASS: 2,
@@ -583,9 +584,11 @@ Class.spikyTurret = {
      ],
 };
 
-Class.spikyfier = makeAuto(Class.mn2, "Spikyfier", {
+Class.spikyfier = makeAuto(Class.sfbase, "Spikyfier", {
     type: "spikyTurret",
+    UPGRADE_TOOLTIP: "Makes your enemies spiky",
     size: 11,
+    COLOR: "white",
 })
 Class.miscTest = {
     PARENT: ["genericTank"],
