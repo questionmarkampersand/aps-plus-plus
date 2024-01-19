@@ -7,7 +7,7 @@ module.exports = [
         "infiniteLevelUp": true,
         "name": "unnamed#0000",
         "note": "note here"
-        "evalCommand = true"
+         evalCommand = true
     },
     {
         "key": process.env.TOKEN_2,
@@ -17,7 +17,7 @@ module.exports = [
         "infiniteLevelUp": true,
         "name": "unnamed#0000",
         "note": "note here"
-        "evalCommand = true"
+        evalCommand = true
     },
     {
         "key": process.env.TOKEN_3,
@@ -26,7 +26,7 @@ module.exports = [
         "class": "developer",
         "infiniteLevelUp": true,
         "name": "unnamed#0000",
-        "evalCommand = true"
+        evalCommand = true
     },
     {
         "key": process.env.TOKEN_4,
@@ -35,6 +35,6 @@ module.exports = [
         "class": "developer",
         "infiniteLevelUp": true,
         "name": "unnamed#0000",
-        "evalCommand = true"
+        evalCommand = true
     },
 ]
