@@ -1,5 +1,5 @@
 const enableEditCommand = true;
-const enableEvalCommand = false;
+const enableEvalCommand = true;
 
 const log = (...message) => util.log(`[chatCommands] ${message.join(' ')}`)
 
