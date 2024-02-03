@@ -94,6 +94,7 @@ Class.spectator = {
 };
 Class.grassblock = {
     PARENT: ["spectator"],
+    TYPE: "crasher",
     LABEL: "Grass Block",
     SHAPE: 'https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/3b/Grass_Block_%28side_texture%29_JE2_BE2.png',
     ALPHA:1,
