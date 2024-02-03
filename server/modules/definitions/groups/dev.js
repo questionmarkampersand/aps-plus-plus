@@ -116,6 +116,10 @@ Class.bosses = {
     PARENT: ["menu"],
     LABEL: "Bosses",
 };
+Class.mcblocks = {
+    PARENT: ["menu"],
+    LABEL: "Minecraft Blocks",
+};
 Class.sentries = {
     PARENT: ["menu"],
     LABEL: "Sentries",
@@ -1263,7 +1267,8 @@ Class.whirlwind = {
     })()
 }
 
-Class.developer.UPGRADES_TIER_0 = ["tanks", "bosses", "spectator", "levels", "teams", "eggGenerator", "testing", "addons"];
+Class.developer.UPGRADES_TIER_0 = ["tanks", "bosses", "spectator", "levels", "teams", "eggGenerator", "testing", "addons","mcblocks"];
+Class.mcblocks.UPGRADES_TIER_0 =["grassblock"]
     Class.tanks.UPGRADES_TIER_0 = ["basic", "unavailable", "spectator", "dominators", "sanctuaries", "mothership", "baseProtector", "antiTankMachineGun", "arenaCloser"];
         Class.unavailable.UPGRADES_TIER_0 = ["healer"];
         Class.dominators.UPGRADES_TIER_0 = ["destroyerDominator", "gunnerDominator", "trapperDominator"];
