@@ -92,7 +92,26 @@ Class.spectator = {
     },
     GUNS: [],
 };
-
+Class.grassblock = {
+    PARENT: ["spectator"],
+    LABEL: "Grass Block",
+    SHAPE: 'https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/3b/Grass_Block_%28side_texture%29_JE2_BE2.png/revision/latest?cb=20200921204925',
+    CAN_BE_ON_LEADERBOARD: false,
+    ACCEPTS_SCORE: false,
+    DRAW_HEALTH: false,
+    HITS_OWN_TYPE: "hard",
+    ARENA_CLOSER: true,
+    SKILL_CAP: [0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
+    BODY: {
+        SPEED: 1.5,
+        FOV: 1,
+        DAMAGE: 0,
+        HEALTH: 1e100,
+        SHIELD: 1e100,
+        REGEN: 1e100,
+    },
+    GUNS: [],
+};
 Class.bosses = {
     PARENT: ["menu"],
     LABEL: "Bosses",
