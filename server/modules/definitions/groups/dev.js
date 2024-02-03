@@ -100,7 +100,7 @@ Class.grassblock = {
     CAN_BE_ON_LEADERBOARD: false,
     ACCEPTS_SCORE: false,
     DRAW_HEALTH: false,
-    HITS_OWN_TYPE: "hard",
+    HITS_OWN_TYPE: "never",
     ARENA_CLOSER: true,
     SKILL_CAP: [0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
     BODY: {
