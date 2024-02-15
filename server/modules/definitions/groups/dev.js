@@ -1669,7 +1669,6 @@ Class.LanceSword = {
 Class.spikyrange = {
    PARENT: [Class.genericTank],
    LABEL: 'Spikyrange',
-  SKILL: setSkill(9, 9, 9, 9, 9, 9, 9, 9, 9, 9),
    GUNS: [ {
          POSITION: [ -20, 8, 0, 25, 0, 90, 0, ],
         PROPERTIES: {
