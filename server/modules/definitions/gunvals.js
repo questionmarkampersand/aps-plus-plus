@@ -102,6 +102,14 @@ module.exports = {
     power: { shudder: 0.6, size: 1.2, pen: 1.25, speed: 2, maxSpeed: 1.7, density: 2, spray: 0.5, resist: 1.5 },
     fake: { recoil: 0.00001, size: 0.00001, health: 0.0001, speed: 0.00001, maxSpeed: 2, range: 0 },
     op: { reload: 0.5, recoil: 1.3, health: 4, damage: 4, pen: 4, speed: 3, maxSpeed: 2, density: 5, spray: 2 },
+    
+    
+    //woomy2aps++
+     lance: { reload: 6, recoil: 0,  shudder: .1,  size: 1,  health: .5,  damage: 1.2, pen: 1.6, speed: .67, maxSpeed: 1, range: .08, density: 1,   spray: 180, resist: 1},
+     more_reload: { reload: .85, recoil: 1, shudder: 1, size: 1, health: 1, damage: 1,   pen: 1, speed: 1, maxSpeed: 1,   range: 1,  density: 1, spray: 1, resist: 1 },
+	 more_damage: { reload: 1, recoil: 1, shudder: 1, size: 1, health: 1.15, damage: 1.1, pen: 1, speed: 1, maxSpeed: 1,  range: 1,  density: 1,  spray: 1,  resist: 1 },
+    
+  // Misc  
     arenaCloser: { reload: 1.25, recoil: 0.25, health: 1000, damage: 1000, pen: 1000, speed: 2.5, maxSpeed: 2.25, range: 1.4, density: 4, spray: 0.25 },
     healer: { damage: -1 },
     lowPower: { shudder: 2, health: 0.5, damage: 0.5, pen: 0.7, spray: 0.5, resist: 0.7 },
