@@ -51,8 +51,179 @@ Class.wall = {
     SIZE: 25,
     SHAPE: 4,
     VARIES_IN_SIZE: false,
+    
 };
-
+Class.SpikyWall = {
+    PARENT: ["rock"],
+    LABEL: "Spiky Wall",
+    SIZE: 25,
+    SHAPE: 4,
+    VARIES_IN_SIZE: false,
+ GUNS: [ {
+         POSITION: [ -18, 6, 0, 25, -4, 0, 0, ],
+          PROPERTIES: {
+            AUTOFIRE: true,
+            SHOOT_SETTINGS: combineStats([g.lance, g.half_reload,g.more_damage, g.half_reload,g.more_damage, g.half_reload,g.more_damage]),
+            TYPE: [Class.bullet, {
+                ALPHA: 0,
+                LABEL: 'Lance'
+            }]
+        }
+    }, {
+         POSITION: [ -18, 6, 0, 25, 4, 0, 0, ],
+          PROPERTIES: {
+            AUTOFIRE: true,
+            SHOOT_SETTINGS: combineStats([g.lance, g.half_reload,g.more_damage, g.half_reload,g.more_damage, g.half_reload,g.more_damage]),
+            TYPE: [Class.bullet, {
+                ALPHA: 0,
+                LABEL: 'Lance'
+            }]
+        }
+    }, {
+         POSITION: [ -18, 6, 0, 25, 4, 0, 0, ],
+         PROPERTIES: {
+            AUTOFIRE: true,
+            SHOOT_SETTINGS: combineStats([g.lance, g.half_reload,g.more_damage, g.half_reload,g.more_damage, g.half_reload,g.more_damage]),
+            TYPE: [Class.bullet, {
+                ALPHA: 0,
+                LABEL: 'Lance'
+            }]
+        }
+    }, {
+         POSITION: [ -18, 6, 0, 25, -4, 0, 0, ],
+         PROPERTIES: {
+            AUTOFIRE: true,
+            SHOOT_SETTINGS: combineStats([g.lance, g.half_reload,g.more_damage, g.half_reload,g.more_damage, g.half_reload,g.more_damage]),
+            TYPE: [Class.bullet, {
+                ALPHA: 0,
+                LABEL: 'Lance'
+            }]
+        }
+    }, {
+         POSITION: [ -18, 6, 0, 25, 4, 90, 0, ],
+         PROPERTIES: {
+            AUTOFIRE: true,
+            SHOOT_SETTINGS: combineStats([g.lance, g.half_reload,g.more_damage, g.half_reload,g.more_damage, g.half_reload,g.more_damage]),
+            TYPE: [Class.bullet, {
+                ALPHA: 0,
+                LABEL: 'Lance'
+            }]
+        }
+    }, {
+         POSITION: [ -18, 6, 0, 25, -4, -90, 0, ],
+          PROPERTIES: {
+            AUTOFIRE: true,
+            SHOOT_SETTINGS: combineStats([g.lance, g.half_reload,g.more_damage, g.half_reload,g.more_damage, g.half_reload,g.more_damage]),
+            TYPE: [Class.bullet, {
+                ALPHA: 0,
+                LABEL: 'Lance'
+            }]
+        }
+    }, {
+         POSITION: [ -18, 6, 0, 25, 4, 180, 0, ],
+         PROPERTIES: {
+            AUTOFIRE: true,
+            SHOOT_SETTINGS: combineStats([g.lance, g.half_reload,g.more_damage, g.half_reload,g.more_damage, g.half_reload,g.more_damage]),
+            TYPE: [Class.bullet, {
+                ALPHA: 0,
+                LABEL: 'Lance'
+            }]
+        }
+    }, {
+         POSITION: [ -18, 6, 0, 25, -4, -180, 0, ],
+          PROPERTIES: {
+            AUTOFIRE: true,
+            SHOOT_SETTINGS: combineStats([g.lance, g.half_reload,g.more_damage, g.half_reload,g.more_damage, g.half_reload,g.more_damage]),
+            TYPE: [Class.bullet, {
+                ALPHA: 0,
+                LABEL: 'Lance'
+            }]
+        }
+    }, {
+         POSITION: [ -18, 6, 0, 25, 4, 180, 0, ],
+         PROPERTIES: {
+            AUTOFIRE: true,
+            SHOOT_SETTINGS: combineStats([g.lance, g.half_reload,g.more_damage, g.half_reload,g.more_damage, g.half_reload,g.more_damage]),
+            TYPE: [Class.bullet, {
+                ALPHA: 0,
+                LABEL: 'Lance'
+            }]
+        }
+    }, {
+         POSITION: [ -18, 6, 0, 25, -4, -180, 0, ],
+          PROPERTIES: {
+            AUTOFIRE: true,
+            SHOOT_SETTINGS: combineStats([g.lance, g.half_reload,g.more_damage, g.half_reload,g.more_damage, g.half_reload,g.more_damage]),
+            TYPE: [Class.bullet, {
+                ALPHA: 0,
+                LABEL: 'Lance'
+            }]
+        }
+    }, {
+         POSITION: [ -18, 6, 0, 25, 4, 90, 0, ],
+         PROPERTIES: {
+            AUTOFIRE: true,
+            SHOOT_SETTINGS: combineStats([g.lance, g.half_reload,g.more_damage, g.half_reload,g.more_damage, g.half_reload,g.more_damage]),
+            TYPE: [Class.bullet, {
+                ALPHA: 0,
+                LABEL: 'Lance'
+            }]
+        }
+    }, {
+         POSITION: [ -18, 6, 0, 25, -4, -90, 0, ],
+          PROPERTIES: {
+            AUTOFIRE: true,
+            SHOOT_SETTINGS: combineStats([g.lance, g.half_reload,g.more_damage, g.half_reload,g.more_damage, g.half_reload,g.more_damage]),
+            TYPE: [Class.bullet, {
+                ALPHA: 0,
+                LABEL: 'Lance'
+            }]
+        }
+    }, {
+         POSITION: [ -18, 6, 0, 25, -4, 90, 0, ],
+          PROPERTIES: {
+            AUTOFIRE: true,
+            SHOOT_SETTINGS: combineStats([g.lance, g.half_reload,g.more_damage, g.half_reload,g.more_damage, g.half_reload,g.more_damage]),
+            TYPE: [Class.bullet, {
+                ALPHA: 0,
+                LABEL: 'Lance'
+            }]
+        }
+    }, {
+         POSITION: [ -18, 6, 0, 25, 4, -90, 0, ],
+          PROPERTIES: {
+            AUTOFIRE: true,
+            SHOOT_SETTINGS: combineStats([g.lance, g.half_reload,g.more_damage, g.half_reload,g.more_damage, g.half_reload,g.more_damage]),
+            TYPE: [Class.bullet, {
+                ALPHA: 0,
+                LABEL: 'Lance'
+            }]
+        }
+    }, {
+         POSITION: [ -18, 6, 0, 25, -4, 90, 0, ],
+         PROPERTIES: {
+            AUTOFIRE: true,
+            SHOOT_SETTINGS: combineStats([g.lance, g.half_reload,g.more_damage, g.half_reload,g.more_damage, g.half_reload,g.more_damage]),
+            TYPE: [Class.bullet, {
+                ALPHA: 0,
+                LABEL: 'Lance'
+            }]
+        }
+    }, {
+         POSITION: [ -18, 6, 0, 25, 4, -90, 0, ],
+          PROPERTIES: {
+            AUTOFIRE: true,
+            SHOOT_SETTINGS: combineStats([g.lance, g.half_reload,g.more_damage, g.half_reload,g.more_damage, g.half_reload,g.more_damage]),
+            TYPE: [Class.bullet, {
+                ALPHA: 0,
+                LABEL: 'Lance'
+            }]
+        }
+    }, {
+         POSITION: [ 0, 0, 0, 0, 0, 1.5, 0, ],
+         }, 
+     ],
+};
 // DOMINATORS
 Class.dominationBody = {
     LABEL: "",
